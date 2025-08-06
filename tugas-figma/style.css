@@ -1,0 +1,160 @@
+/* variabel global dalam css */
+
+/* /* :root {
+    --primary-color:#F5F7FA;
+    --second-color: rgb(226, 214, 200);
+    --accent-color: rgb(207, 193, 219); */
+
+ */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+      margin: 0;
+  padding: 0;
+
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 1.5 rem;
+}
+
+.hero-section{
+    background-color: var(--primary-color);
+    color: rgb(19, 17, 17);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.page-section{
+    /* vh buat section jd 1 halaman */
+    min-height: 100vh;
+    padding-top: 50px;
+}
+.section-padding{
+    padding: 80px 0;
+}
+.section-title{
+    position:relative;
+    margin-bottom: 50px;
+
+}
+/* buat garis bawah */
+/* .section-title::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+    transform: translateX(-50%);
+} */
+.lead{
+    font-weight: normal;
+}
+.fade-in{
+    /* opacity: 0; */
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+.team-member{
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.team-avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 3rem;
+    color: rgb(221, 178, 143);
+}
+/* css sendiri */
+
+h1.fw-bold {
+  color: #4D4D4D; 
+}
+.card-garis{
+    border: none;
+}
+
+.carousel-item [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #555; /* warna indikator */
+    opacity: 0.5;
+    transition: opacity 0.3s, background-color 0.3s;
+}
+.carousel-item .active{
+    opacity: 1;
+    background-color: #4caf4f; /* warna indikator aktif */
+    margin-top: 10px;
+}
+
+
+
+.custom-img {
+  max-height: 300px;
+  height: auto;
+  width: auto;
+}
+ .custom-logo {
+    max-width: 180px;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  @media (max-width: 768px) {
+    .custom-logo {
+      max-width: 120px;
+    }
+  }
+
+
+  .grayscale-image{
+    filter:grayscale(100%);
+    background: transparent !important;
+
+  }
+   
+    .footer {
+      padding: 40px 0;
+      font-size: 14px;
+       background-color: #1F2937;
+      color: #ffffff;
+    }
+    .footer a {
+      color: #d1d5db;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .social-icons i {
+      font-size: 18px;
+      margin-right: 10px;
+      color: #ffffff;
+      background-color: #374151;
+      padding: 8px;
+      border-radius: 50%;
+    }
+    .subscribe-input {
+      background-color: #374151;
+      border: none;
+      color: #d1d5db;
+    }
+    .subscribe-input::placeholder {
+      color: #9ca3af;
+    }
+    .subscribe-btn {
+      background: none;
+      border: none;
+      color: #d1d5db;
+    }
